@@ -1,6 +1,21 @@
 
 $(document).ready(function () {
     // console.log("hi");
+    // Start Back to Stop 
+    $(".btn-backtotops").hide();
+
+    $(window).scroll(function(){
+        let getscrolltop = $(this).scrollTop();
+
+        console.log(getscrolltop);
+
+        if(getscrolltop >= 370){
+            $(".btn-backtotops").fadeIn(1000)
+        }else{
+            $(".btn-backtotops").fadeOut(1000)
+        }
+    });
+    // End back to top 
 
     // Start Header 
     //  Start nav bar 
@@ -80,5 +95,15 @@ $(document).ready(function () {
     });
     // End Adv 
 
+
+    // start footer section 
+    const getyear = $('#getyear');
+
+    const getfullyear = new Date().getFullYear()
+    getyear.text(getfullyear)
+
+    // end footer section 
     
 });
+
+
