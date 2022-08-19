@@ -10,6 +10,22 @@ body{
     margin: 0;
 }
 
+/* start back to top  */
+.btn-backtotops{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    
+
+    z-index: 100;
+}
+/* end back to top  */
 
 /* Start Header  */
 
@@ -389,11 +405,132 @@ ul.clientlists li:hover{
 }
 /* end customers  */
 
+
+/* Start Request Quote */
+.quotes{
+	background: var(--secondary-color);
+	margin: -30px;
+	padding: 30px 50px;
+
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+
+.quotes .btn-calls{
+	width: 170px;
+	height: 50px;
+	background: var(--primary-color);
+	color: #fff;
+	font-size: 15px;
+	line-height: 50px;
+	border: none;
+	border-radius: 100px;
+	padding: 0;  /*cause of bootstrap btn*/
+	transform: translateY(-1px);
+
+	transition: all .7s;
+}
+
+.quotes .infos{
+	display: flex;
+	justify-content: space-between;
+}
+
+.quotes .btn-calls:hover{
+	box-shadow: -3px 4px 3px #444;
+	transform: translateY(0px);
+}
+
+.phoneicon{
+    width: 30px;
+}
+@media(max-width:768px){
+    .phoneicon{
+        width: 50px;
+    }
+}
+/* End Request Quote */
+
+/* Start Furniture Service  */
+.furnitureicon img{
+    width: 70px;
+}
+
+.furnitureicon div:nth-of-type(even){
+    background: #f1f1f1;
+}
+/* End Furniture Seviece  */
+
+
+/* Start Contacts  */
+.contacts{
+    background-image: linear-gradient(100deg,rgba(0,0,0,0.9) 50%,rgba(0,0,0,0.5) 30%,transparent 70%),url(../assest/img/banner/banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.contacts .inputs{
+    background:transparent;
+    border-color: transparent;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    color: #fff;
+
+    transition: all .8s;
+
+}
+
+.contacts .inputs:focus{
+    
+    box-shadow: none;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.submitbtns{
+background-color: var(--primary-color);
+border:none;
+color: #fff;
+}
+
+.submitbtns:hover{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.labels{
+    color: #e2e2e2;
+    display: block;
+    margin-top: -60px;
+    margin-left: 10px;
+
+    transition: all 1s;
+}
+
+.inputs:placeholder-shown + .labels{
+    opacity: 0;
+    transform: translateY(20px);
+}
+/* End contacts  */
+
+/* start footer  */
+.footerlinks{
+    color: #e2e2e2;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all .3s;
+}
+.footerlinks:hover{
+    color: orange;
+    text-decoration: underline;
+    border-bottom: 1px solid orange;
+    letter-spacing: 1px;
+}
+/* end footer  */
+
 /* adjus +
 general ~ */
 
-/* 23PP  */
-
-
-
-/* https://www.remove.bg/  */
